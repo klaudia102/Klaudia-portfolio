@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <title>Klaudia Kierepka// Web Developer</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
+  <header id="header"> <!--this is a header with name and navigation bar to section of the page-->
+    <h1>Klaudia Kierepka</h1>
+    <div id="navigation">
+      <p>About me</p>
+      <p>Work</p>
+      <p>Contact Me</p>
+    </div>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2 id="headline">New developer in town!</h2>
     </div>
   </section>
 
@@ -28,16 +31,43 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
+      <article>
+        <p></p> <!--hear write something about my experience from history/archive-->
+        <p></p> <!-- heare write something about my skills and adwatnages etc-->
+        <p></p> <!-- here why I am the best choice-->
+      </article>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+      <div id="categoryGrid">
+        <div id="Horiseon" class="categoryGridArea">
+          <div class="GridHeading">Horiseon</div>
+        </div>
+        <div id="google" class="categoryGridArea">
+          <div class="GridHeading">Google</div>
+        </div>
+        <div id="facebook" class="categoryGridArea">
+          <div class="GridHeading">Facebook</div>
+        </div>
+        <div id="wiki" class="categoryGridArea">
+          <div class="GridHeading">Wikipedia</div>
+        </div>
+        <div id="insta" class="categoryGridArea">
+          <div class="GridHeading">Instagram</div>
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <div> <!-- should be class or id-->
+        <p> Mobile</p>
+        <p> Repo</p>
+        <p>LinkedIn</p>
+      </div>
     </section>
   </main>
 </body>
