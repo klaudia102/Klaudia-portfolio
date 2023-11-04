@@ -60,3 +60,32 @@ header p { /*add links to section!*/
   max-width: 550px;
   z-index: 100;
 }
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 5%;
+  justify-content: center;
+}
+.page-section {
+  display: flex;
+  flex-direction: row;
+  background-color: blanchedalmond;
+  
+}
+h2 {
+  font-size: 25px;
+  color: lightskyblue;
+}
+.sectionHeading {
+  border-right: 5px solid lightskyblue;
+  align-items: center;
+  justify-content:center;
+  margin: auto;
+  margin-left: 10px;
+}
+#AboutMe {
+  color: black
+  font-size: large;
+  justify-content: space-evenly;
+  padding-left: 5%;
+}
