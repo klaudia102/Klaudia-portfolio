@@ -18,12 +18,45 @@ h6 {
   margin: 0;
 }
 
-p {
+header p { /*add links to section!*/
   margin: 0;
+  color: black;
 }
-#header
-
+#header {
+  background-color: blanchedalmond;
+  background-position: cover;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  color: lightskyblue;
+}
 #navigation {
-
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+#header h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hero-banner{
+  background-image: url("../images/02-portfolio-2.jpg");
+  margin: auto;
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+}
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid lightskyblue;
+  position: absolute;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
