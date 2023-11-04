@@ -42,6 +42,7 @@ header p { /*add links to section!*/
 }
 #header h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: lightskyblue;
 }
 .hero-banner{
   background-image: url("../images/02-portfolio-2.jpg");
@@ -84,8 +85,55 @@ h2 {
   margin-left: 10px;
 }
 #AboutMe {
-  color: black
+  color: black;
   font-size: large;
   justify-content: space-evenly;
   padding-left: 5%;
+}
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  height: 150vh;
+  width: 80%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "Horiseon Horiseon"
+  "google facebook"
+  "netflix insta";
+}
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+#Horiseon {
+  grid-area: Horiseon;
+  background-image: url("../images/Screenshot\ \(2\).png") ;
+}
+#google {
+  grid-area: google;
+  background-image:url("../images/google-logo-9808.png") ;
+}
+#facebook {
+  grid-area: facebook;
+  background-image:url("../images/facebook-logo-498.jpg") ;
+  
+}
+#netflix {
+  grid-area: netflix;
+  background-image:url("../images/netflix-logo-png-2574.png");
+  width: 100%;
+}
+#insta {
+  grid-area: insta;
+  background-image:url("../images/logo-instagram-2431.png") ;
+}
+.GridHeading {
+  color: lightskyblue;
+  font-size: larger;
 }
