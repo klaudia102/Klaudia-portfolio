@@ -137,3 +137,22 @@ h2 {
   color: lightskyblue;
   font-size: larger;
 }
+#contact {
+  background-color: blanchedalmond;
+  background-position: cover;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  color: lightskyblue;
+}
+#myContact {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 5%;
+}
+#myContact p {
+  cursor: pointer;
+  text-decoration: none;
+}
