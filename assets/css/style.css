@@ -1,14 +1,14 @@
 * {
   box-sizing: border-box;
 }
-
+/* this will apply to whole page */
 body {
-  margin: 0;
+  margin: 2px;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
+/* this will apply to headings */
 h1,
 h2,
 h3,
@@ -17,11 +17,16 @@ h5,
 h6 {
   margin: 0;
 }
+/* this will aply to header with name and navbar */
+a {
+  color: lightskyblue;
+}
 
-header p { /*add links to section!*/
+header p {
   margin: 0;
   color: black;
 }
+
 #header {
   background-color: blanchedalmond;
   background-position: cover;
@@ -30,21 +35,26 @@ header p { /*add links to section!*/
   margin: 0px 5%;
   color: lightskyblue;
 }
+
 #navigation {
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: space-evenly;
 }
+
 #navigation p {
   cursor: pointer;
   text-decoration: none;
+  color: lightskyblue;
 }
+
 #header h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: lightskyblue;
 }
-.hero-banner{
+
+.hero-banner {
   background-image: url("../images/02-portfolio-2.jpg");
   margin: auto;
   margin: 0px 5%;
@@ -52,8 +62,9 @@ header p { /*add links to section!*/
   min-height: 500px;
   height: 70vh;
 }
+
 #headline {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 5px solid lightskyblue;
   position: absolute;
   top: 100px;
@@ -61,47 +72,55 @@ header p { /*add links to section!*/
   max-width: 550px;
   z-index: 100;
 }
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
   margin: 0px 5%;
   justify-content: center;
 }
+
 .page-section {
   display: flex;
   flex-direction: row;
   background-color: blanchedalmond;
-  
 }
+
 h2 {
   font-size: 25px;
   color: lightskyblue;
 }
+
 .sectionHeading {
   border-right: 5px solid lightskyblue;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   margin: auto;
   margin-left: 10px;
+  padding-left: 2em;
+  padding-right: 1em;
 }
+
 #AboutMe {
   color: black;
   font-size: large;
   justify-content: space-evenly;
-  padding-left: 5%;
+  margin: 0px 5%;
 }
-#categoryGrid {
+
+.categoryGrid {
   margin: 0px 5%;
   display: grid;
-  height: 150vh;
-  width: 80%;
+  /* height: 150vh;
+  width: 80%; */
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 50% 50%;
   grid-template-areas:
-  "Horiseon Horiseon"
-  "google facebook"
-  "netflix insta";
+    "Horiseon Horiseon"
+    "google facebook"
+    "netflix insta";
 }
+
 .categoryGridArea {
   background-position: center;
   background-size: cover;
@@ -109,50 +128,101 @@ h2 {
   margin: 5px;
   cursor: pointer;
   display: grid;
-  align-content: end;
+
 }
+img {
+  background-size:cover;
+  width: 80%;
+}
+
+#Horiseon img {
+  justify-content: center;
+}
+
 #Horiseon {
   grid-area: Horiseon;
-  background-image: url("../images/Screenshot\ \(2\).png") ;
 }
+
 #google {
   grid-area: google;
-  background-image:url("../images/google-logo-9808.png") ;
 }
+
 #facebook {
   grid-area: facebook;
-  background-image:url("../images/facebook-logo-498.jpg") ;
-  
 }
+
 #netflix {
   grid-area: netflix;
-  background-image:url("../images/netflix-logo-png-2574.png");
-  width: 100%;
 }
+
 #insta {
   grid-area: insta;
-  background-image:url("../images/logo-instagram-2431.png") ;
 }
+
 .GridHeading {
-  color: lightskyblue;
-  font-size: larger;
-}
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 35px;
+    color: white;
+    font-size: 25px;
+    border-bottom: 5px solid lightskyblue;
+  }
+
 #contact {
   background-color: blanchedalmond;
   background-position: cover;
   display: flex;
   flex-direction: row;
-  margin: 0px 5%;
   color: lightskyblue;
 }
+
+#contact>h2 {
+  margin-left: -16px;
+}
+
 #myContact {
   display: flex;
-  width: 70%;
+  width: 100%;
   align-items: center;
   justify-content: space-evenly;
   padding-left: 5%;
 }
+
 #myContact p {
   cursor: pointer;
   text-decoration: none;
+  font-size: 25px;
 }
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .sectionHeading {
+    margin: 5px;
+    padding: 0px;
+    font-size: 15px;
+  }
+  }
+
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  } 
+  #myContact p {
+    font-size: 15px;
+  }
+  
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "Horiseon"
+    "google" 
+    "facebook"
+    "netflix" 
+    "insta";
+  }
+} 
