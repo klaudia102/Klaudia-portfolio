@@ -111,8 +111,8 @@ h2 {
 .categoryGrid {
   margin: 0px 5%;
   display: grid;
-  height: 150vh;
-  width: 80%;
+  /* height: 150vh;
+  width: 80%; */
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 50% 50%;
   grid-template-areas:
@@ -121,7 +121,6 @@ h2 {
     "netflix insta";
 }
 
-
 .categoryGridArea {
   background-position: center;
   background-size: cover;
@@ -129,11 +128,15 @@ h2 {
   margin: 5px;
   cursor: pointer;
   display: grid;
- /* align-content: end; */
+
 }
 img {
-  background-size: cover;
+  background-size:cover;
   width: 80%;
+}
+
+#Horiseon img {
+  justify-content: center;
 }
 
 #Horiseon {
@@ -150,7 +153,6 @@ img {
 
 #netflix {
   grid-area: netflix;
-  width: 100%;
 }
 
 #insta {
@@ -160,12 +162,11 @@ img {
 .GridHeading {
     background-color: rgba(0,0,0,0.7);
     padding: 15px;
-    height: 25px;
+    height: 35px;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     border-bottom: 5px solid lightskyblue;
   }
-
 
 #contact {
   background-color: blanchedalmond;
@@ -190,11 +191,17 @@ img {
 #myContact p {
   cursor: pointer;
   text-decoration: none;
+  font-size: 25px;
 }
 
 @media only screen and (max-width: 1000px) {
   #navigation {
     display: none;
+  }
+  .sectionHeading {
+    margin: 5px;
+    padding: 0px;
+    font-size: 15px;
   }
   }
 
@@ -204,6 +211,9 @@ img {
     position: static;
     margin: 20px;
   } 
+  #myContact p {
+    font-size: 15px;
+  }
   
   #categoryGrid {
     grid-template-rows: 300px 300px 300px 300px 300px;
