@@ -84,7 +84,6 @@ header p {
   display: flex;
   flex-direction: row;
   background-color: blanchedalmond;
-
 }
 
 h2 {
@@ -109,7 +108,7 @@ h2 {
   margin: 0px 5%;
 }
 
-#categoryGrid {
+.categoryGrid {
   margin: 0px 5%;
   display: grid;
   height: 150vh;
@@ -122,6 +121,7 @@ h2 {
     "netflix insta";
 }
 
+
 .categoryGridArea {
   background-position: center;
   background-size: cover;
@@ -129,38 +129,32 @@ h2 {
   margin: 5px;
   cursor: pointer;
   display: grid;
-  align-content: end;
+ /* align-content: end; */
 }
-
 img {
   background-size: cover;
+  width: 80%;
 }
 
 #Horiseon {
   grid-area: Horiseon;
-  background-image: url("../images/Screenshot\ \(2\).png");
 }
 
 #google {
   grid-area: google;
-  background-image: url("../images/google-logo-9808.png");
 }
 
 #facebook {
   grid-area: facebook;
-  background-image: url("../images/facebook-logo-498.jpg");
-
 }
 
 #netflix {
   grid-area: netflix;
-  background-image: url("../images/netflix-logo-png-2574.png");
   width: 100%;
 }
 
 #insta {
   grid-area: insta;
-  background-image: url("../images/logo-instagram-2431.png");
 }
 
 .GridHeading {
